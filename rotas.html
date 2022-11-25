@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_987e26d1f0b3f4b40eb19d1a7d54ee92 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_987e26d1f0b3f4b40eb19d1a7d54ee92" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_987e26d1f0b3f4b40eb19d1a7d54ee92 = L.map(
+                "map_987e26d1f0b3f4b40eb19d1a7d54ee92",
+                {
+                    center: [-8.05841781783373, -34.91863983493353],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    fitBounds: [[-8.13603048100053, -34.9548502929475], [-8.00756181003203, -34.872209718452915]],
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a4c9240a4399f912d5682d09d7b5c5de = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_987e26d1f0b3f4b40eb19d1a7d54ee92);
+        
+    
+            var feature_group_f7fb246a3559997e1d1e76c53645695e = L.featureGroup(
+                {}
+            ).addTo(map_987e26d1f0b3f4b40eb19d1a7d54ee92);
+        
+    
+            var poly_line_d60ed319e20502936b84d5990f7b567a = L.polyline(
+                [[-8.053895462276042, -34.872209718452915], [-8.07921171652708, -34.9485843888166]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7fb246a3559997e1d1e76c53645695e);
+        
+    
+            var poly_line_c09f33b79396b146a387955f90a69db1 = L.polyline(
+                [[-8.07921171652708, -34.9485843888166], [-8.13603048100053, -34.9548502929475]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7fb246a3559997e1d1e76c53645695e);
+        
+    
+            var poly_line_3968c1175059de99c8a4f965c0762d3f = L.polyline(
+                [[-8.13603048100053, -34.9548502929475], [-8.11864369415015, -34.9463698311458]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7fb246a3559997e1d1e76c53645695e);
+        
+    
+            var poly_line_3353ed305b6308653f17a1443c573440 = L.polyline(
+                [[-8.053895462276042, -34.872209718452915], [-8.11864369415015, -34.9463698311458]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7fb246a3559997e1d1e76c53645695e);
+        
+    
+            var marker_5c5fe4e55f7ae1f200dd6738d25b6742 = L.marker(
+                [-8.07921171652708, -34.9485843888166],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "1", "radius": 5}
+            ).addTo(feature_group_f7fb246a3559997e1d1e76c53645695e);
+        
+    
+            marker_5c5fe4e55f7ae1f200dd6738d25b6742.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL DOM BOSCO</h5><br>
+                                            <p>Endereço : Rua Alvenópolis, 600 - Jardim São Paulo, Recife - PE, 50790-200 </p>
+                                            <p>Regional : 3  </p>
+                                            <p>RPA : 5 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe1785d68ac768c22ef903b0fd4b7eae = L.marker(
+                [-8.13603048100053, -34.9548502929475],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "1", "radius": 5}
+            ).addTo(feature_group_f7fb246a3559997e1d1e76c53645695e);
+        
+    
+            marker_fe1785d68ac768c22ef903b0fd4b7eae.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL CICERO FRANKLIN CORDEIRO</h5><br>
+                                            <p>Endereço : Felipe dos Santos, 81, Ur 05IburaRecife - PECEP: 51320-410 </p>
+                                            <p>Regional : 4  </p>
+                                            <p>RPA : 6 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_462cc65ab1fa88d21c99620a06d2cc4c = L.marker(
+                [-8.11864369415015, -34.9463698311458],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "1", "radius": 5}
+            ).addTo(feature_group_f7fb246a3559997e1d1e76c53645695e);
+        
+    
+            marker_462cc65ab1fa88d21c99620a06d2cc4c.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL MARIA DE SAMPAIO LUCENA</h5><br>
+                                            <p>Endereço : Av. Pernambuco - COHAB, Recife - PE, 51280-000 </p>
+                                            <p>Regional : 4  </p>
+                                            <p>RPA : 6 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_91ff8466f2ad8b791e816af8061eb0b7 = L.featureGroup(
+                {}
+            ).addTo(map_987e26d1f0b3f4b40eb19d1a7d54ee92);
+        
+    
+            var poly_line_5752c69e34ede1dfa40c4e277cfa1787 = L.polyline(
+                [[-8.053895462276042, -34.872209718452915], [-8.06521565248312, -34.8953875151463]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_91ff8466f2ad8b791e816af8061eb0b7);
+        
+    
+            var poly_line_c9fe560b5dc2d6c0fa1ab5e0f973e8c9 = L.polyline(
+                [[-8.06521565248312, -34.8953875151463], [-8.07175072479401, -34.9007113546759]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_91ff8466f2ad8b791e816af8061eb0b7);
+        
+    
+            var poly_line_5c7ed121213d99d8ee27d00ca0cc449f = L.polyline(
+                [[-8.07175072479401, -34.9007113546759], [-8.11023571568727, -34.9214692734754]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_91ff8466f2ad8b791e816af8061eb0b7);
+        
+    
+            var poly_line_960f8e1294a56583f35d34d4c1e667c8 = L.polyline(
+                [[-8.053895462276042, -34.872209718452915], [-8.11023571568727, -34.9214692734754]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_91ff8466f2ad8b791e816af8061eb0b7);
+        
+    
+            var marker_a39ecdedf6bc719179eccbbc5e440162 = L.marker(
+                [-8.07175072479401, -34.9007113546759],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "2", "radius": 5}
+            ).addTo(feature_group_91ff8466f2ad8b791e816af8061eb0b7);
+        
+    
+            marker_a39ecdedf6bc719179eccbbc5e440162.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL PROFESSOR JOSÉ DA COSTA PORTO</h5><br>
+                                            <p>Endereço : R. Cabo Eutrópio, 368 - Ilha Joana Bezerra, Recife - PE, 50090-590 </p>
+                                            <p>Regional : 1  </p>
+                                            <p>RPA : 1 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03fa34c7a3fd220d9aebb0d74d3e1bd8 = L.marker(
+                [-8.06521565248312, -34.8953875151463],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "2", "radius": 5}
+            ).addTo(feature_group_91ff8466f2ad8b791e816af8061eb0b7);
+        
+    
+            marker_03fa34c7a3fd220d9aebb0d74d3e1bd8.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL REITOR JOÃO ALFREDO</h5><br>
+                                            <p>Endereço : R. Sen. José Henrique, nº 752 - Ilha do Leite, Recife - PE, 50070-460 </p>
+                                            <p>Regional : 1  </p>
+                                            <p>RPA : 1 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af2fbe596ca05034138c3f1e0cab8036 = L.marker(
+                [-8.11023571568727, -34.9214692734754],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "2", "radius": 5}
+            ).addTo(feature_group_91ff8466f2ad8b791e816af8061eb0b7);
+        
+    
+            marker_af2fbe596ca05034138c3f1e0cab8036.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL LUIS VAZ DE CAMÕES</h5><br>
+                                            <p>Endereço : R. Jacunda, 505 - Ipsep, Recife - PE, 51350-080 </p>
+                                            <p>Regional : 4  </p>
+                                            <p>RPA : 6 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_770398949e57fb34ecf9cea3afeff9fe = L.featureGroup(
+                {}
+            ).addTo(map_987e26d1f0b3f4b40eb19d1a7d54ee92);
+        
+    
+            var poly_line_632ff5aefc91783f6e9ed39f9a8ee1e5 = L.polyline(
+                [[-8.053895462276042, -34.872209718452915], [-8.01838317027667, -34.8890311023115]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_770398949e57fb34ecf9cea3afeff9fe);
+        
+    
+            var poly_line_f6dfe729d9d3ac020d53cf41e1b18c3e = L.polyline(
+                [[-8.01838317027667, -34.8890311023115], [-8.02372434660853, -34.9004667176522]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_770398949e57fb34ecf9cea3afeff9fe);
+        
+    
+            var poly_line_19bd5f9051e9548f78a630349b3cf461 = L.polyline(
+                [[-8.02372434660853, -34.9004667176522], [-8.00756181003203, -34.9044943390829]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_770398949e57fb34ecf9cea3afeff9fe);
+        
+    
+            var poly_line_3aa9c7b53d1580e1c67106328e377f28 = L.polyline(
+                [[-8.053895462276042, -34.872209718452915], [-8.00756181003203, -34.9044943390829]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_770398949e57fb34ecf9cea3afeff9fe);
+        
+    
+            var marker_6f242f1ef1982fc02ac74294900edc78 = L.marker(
+                [-8.01838317027667, -34.8890311023115],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "3", "radius": 5}
+            ).addTo(feature_group_770398949e57fb34ecf9cea3afeff9fe);
+        
+    
+            marker_6f242f1ef1982fc02ac74294900edc78.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL ANTONIO HERACLIO REGO</h5><br>
+                                            <p>Endereço : R. Manoel Silva, 134 - Água Fria, Recife - PE, 52120-520 </p>
+                                            <p>Regional : 1  </p>
+                                            <p>RPA : 2 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9a697483145a397af6a8af94d988157 = L.marker(
+                [-8.00756181003203, -34.9044943390829],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "3", "radius": 5}
+            ).addTo(feature_group_770398949e57fb34ecf9cea3afeff9fe);
+        
+    
+            marker_a9a697483145a397af6a8af94d988157.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL PAULO VI</h5><br>
+                                            <p>Endereço : R. Guaíra, 200 - Linha do Tiro, Recife - PE, 52131-210 </p>
+                                            <p>Regional : 1  </p>
+                                            <p>RPA : 2 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_199741143397d5de30c654e5a0ef8123 = L.marker(
+                [-8.02372434660853, -34.9004667176522],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "3", "radius": 5}
+            ).addTo(feature_group_770398949e57fb34ecf9cea3afeff9fe);
+        
+    
+            marker_199741143397d5de30c654e5a0ef8123.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL DA MANGABEIRA</h5><br>
+                                            <p>Endereço : R. do Cinema, nº 287 - Mangabeira, Recife - PE, 52110-270 </p>
+                                            <p>Regional : 2  </p>
+                                            <p>RPA : 3 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_9a457206d5ed823bee6792dd8575723f = L.featureGroup(
+                {}
+            ).addTo(map_987e26d1f0b3f4b40eb19d1a7d54ee92);
+        
+    
+            var poly_line_afb63c67a45154e60e23b4a3f61f89e3 = L.polyline(
+                [[-8.053895462276042, -34.872209718452915], [-8.02732869937582, -34.9256413176521]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a457206d5ed823bee6792dd8575723f);
+        
+    
+            var poly_line_ba722e355c050783ee0e9793e996f224 = L.polyline(
+                [[-8.02732869937582, -34.9256413176521], [-8.01704044626391, -34.9287938293005]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a457206d5ed823bee6792dd8575723f);
+        
+    
+            var poly_line_dd436bb95c6bbd11ec15e41f39b6098d = L.polyline(
+                [[-8.01704044626391, -34.9287938293005], [-8.03040971236333, -34.9543081734763]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a457206d5ed823bee6792dd8575723f);
+        
+    
+            var poly_line_6bd751440e60e455424258f0066f9a92 = L.polyline(
+                [[-8.053895462276042, -34.872209718452915], [-8.03040971236333, -34.9543081734763]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a457206d5ed823bee6792dd8575723f);
+        
+    
+            var marker_d185bf61a1ce9887bd1d9ae1f17e9742 = L.marker(
+                [-8.02732869937582, -34.9256413176521],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "4", "radius": 5}
+            ).addTo(feature_group_9a457206d5ed823bee6792dd8575723f);
+        
+    
+            marker_d185bf61a1ce9887bd1d9ae1f17e9742.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL NILO PEREIRA</h5><br>
+                                            <p>Endereço : Estr. do Arraial, s/n - Casa Amarela, Recife - PE, 52070-230 </p>
+                                            <p>Regional : 2  </p>
+                                            <p>RPA : 3 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95d884f80b5523548f20134e71e1c23e = L.marker(
+                [-8.01704044626391, -34.9287938293005],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "4", "radius": 5}
+            ).addTo(feature_group_9a457206d5ed823bee6792dd8575723f);
+        
+    
+            marker_95d884f80b5523548f20134e71e1c23e.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL NADIR COLAÇO</h5><br>
+                                            <p>Endereço : Av. Norte Miguel Arraes de Alencar, 7212 - Macaxeira, Recife - PE, 52090-260 </p>
+                                            <p>Regional : 2  </p>
+                                            <p>RPA : 3 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_268b7bf11752d3a48ffbb4eebf116068 = L.marker(
+                [-8.03040971236333, -34.9543081734763],
+                {"color": "gray", "fillColor": "gray", "fillOpacity": 1, "name": "4", "radius": 5}
+            ).addTo(feature_group_9a457206d5ed823bee6792dd8575723f);
+        
+    
+            marker_268b7bf11752d3a48ffbb4eebf116068.bindTooltip(
+                `<div>
+                     
+                                            <h5> ESCOLA EM TEMPO INTEGRAL DIVINO ESPÍRITO SANTO</h5><br>
+                                            <p>Endereço : Pr. do Caxangá, 127 - Caxangá, Recife - PE, 50800-210 </p>
+                                            <p>Regional : 3  </p>
+                                            <p>RPA : 4 </p>
+                                            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b7bff5a12c042f786b4a1fa52417e5d = L.marker(
+                [-8.053895, -34.87221],
+                {"color": "blue", "radius": 3}
+            ).addTo(map_987e26d1f0b3f4b40eb19d1a7d54ee92);
+        
+    
+            marker_7b7bff5a12c042f786b4a1fa52417e5d.bindTooltip(
+                `<div>
+                     Inicio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_e7bfba3a6ed3f0b63d87e5f28a250f07 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_a4c9240a4399f912d5682d09d7b5c5de,
+                },
+                overlays :  {
+                    "1" : feature_group_f7fb246a3559997e1d1e76c53645695e,
+                    "2" : feature_group_91ff8466f2ad8b791e816af8061eb0b7,
+                    "3" : feature_group_770398949e57fb34ecf9cea3afeff9fe,
+                    "4" : feature_group_9a457206d5ed823bee6792dd8575723f,
+                },
+            };
+            L.control.layers(
+                layer_control_e7bfba3a6ed3f0b63d87e5f28a250f07.base_layers,
+                layer_control_e7bfba3a6ed3f0b63d87e5f28a250f07.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_987e26d1f0b3f4b40eb19d1a7d54ee92);
+        
+</script>
+</html>
